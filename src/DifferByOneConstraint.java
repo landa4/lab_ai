@@ -16,7 +16,7 @@ public class DifferByOneConstraint extends BinaryConstraint {
 	@Override
 	public boolean isSatisfiedWith(Assignment assignment) {
 		Integer v1 = (Integer) assignment.getAssignment(var1);
-		Integer v2 = (Integer) assignment.getAssignment(var1);
+		Integer v2 = (Integer) assignment.getAssignment(var2);
 
 		return v1 == null || v2 == null || v1 == v2 +1 || v1 == v2 - 1;
 	}
